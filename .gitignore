@@ -1,0 +1,13 @@
+# Dist
+dist
+
+# Node
+node_modules
+test/results
+test/coverage
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes

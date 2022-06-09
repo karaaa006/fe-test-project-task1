@@ -1,0 +1,22 @@
+{
+	"index": [
+		{
+			"name": "Merriweather",
+			"letters": "M",
+			"description": "Merriweather project is led by Sorokin Type",
+			"color": "green"
+		},
+		{
+			"name": "Roboto",
+			"letters": "R",
+			"description": "Roboto doesn't compromise, allowing letterss",
+			"color": "pink"
+		},
+		{
+			"name": "Noto Sans",
+			"letters": "NS",
+			"description": "Noto Sans covers over 30 scripts",
+			"color": "blue"
+		}
+	]
+}

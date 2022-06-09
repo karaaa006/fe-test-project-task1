@@ -1,0 +1,23 @@
+/**
+ * @section Base Styles
+ */
+
+ *, *::after, *::before{
+	box-sizing: border-box;
+ }
+
+body {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 125%; 
+	margin: 0 auto;
+	max-width: 42em;
+	width: 88%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
