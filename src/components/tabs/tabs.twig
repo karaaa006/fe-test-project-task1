@@ -1,0 +1,43 @@
+<div class="tabs">
+  <div class="tabs__header">
+    <h1 class="tabs__title">Please select one font</h1>
+
+    <ul class="tabs__list">
+      <li class="tabs__list-item">
+        <label class="tabs__label">
+          <input name="tab" class="tabs__default-radio" type="radio" checked value="myFonts">
+          <span class="tabs__tab-title">My fonts</span>
+        </label>
+      </li>
+      <li class="tabs__list-item">
+        <label class="tabs__label">
+          <input name="tab" class="tabs__default-radio" type="radio" value="buyFonts">
+          <span class="tabs__tab-title">Buy fonts</span>     
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tabs__tab-content" data-tabName="myFonts"> 
+    <ul class="font-list">
+      {% for item in fonts %}
+        <li class="font-list__item">
+          <label class="font-list__item-label">
+            <input class="font-list__default-radio" type="radio" value={{item.name}} name="font">
+            <div class="font-list__letter-block font-list__letter-block--{{item.color}}">
+              {{item.letters}}
+            </div>
+            <div class="font-list__item-description">
+              {{item.description}}
+            </div>
+          </label>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="tabs__tab-content" data-tabName="buyFonts">
+    <div class="buy-fonts-tab">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+  </div>
+</div>

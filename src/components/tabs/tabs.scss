@@ -1,0 +1,183 @@
+.tabs__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.tabs__title{
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 600;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.tabs__list{
+  list-style: none;
+
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__default-radio{
+  display: none;
+
+  &:checked ~ .tabs__tab-title{
+    color: #CFD4DB;
+  }
+}
+
+.tabs__tab-title{
+    color: #CB7954;
+
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.tabs__tab-content{
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 40px;
+  border: 3px solid #cccccc;
+  border-radius: 10px;
+
+  &.active{
+    display: flex;
+  }
+}
+
+// ---- font-list
+.font-list {
+  list-style: none;
+
+  display: grid;
+  grid-template-areas: "frst scnd" "frst thrt";
+
+  gap: 50px 75px;
+  margin: 0;
+  padding: 0;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-areas: "frst""scnd" "thrt";
+  }
+}
+
+.font-list__item{
+  &:nth-child(3n-2) {
+    grid-area: frst;
+
+    & .font-list__item-label {
+      flex-direction: column;
+      align-items: start;
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: unset;
+        align-items: center;
+      }
+    }
+
+    & .font-list__letter-block{
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      font-size: 40px;
+
+      @media only screen and (max-width: 768px) {
+        width: 75px;
+        min-width: 75px;
+        height: 75px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &:nth-child(3n-1) {
+        grid-area: scnd;
+  }
+
+  &:nth-child(3n) {
+      grid-area: thrt;
+  }
+}
+
+.font-list__item-label{
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.font-list__default-radio{
+  display: none;
+
+  &:checked ~ .font-list__letter-block, &:checked ~ .font-list__item-description{
+  opacity: 0.5;
+  }
+}
+
+.font-list__letter-block{
+  display: flex;
+  align-items: end;
+
+  width: 75px;
+  min-width: 75px;
+  height: 75px;
+
+  padding: 10px;
+  border-radius: 0.75rem;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 1px 1px #000000;
+
+  color: rgba(255,255,255,0.3);
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.font-list__letter-block--pink{
+  background-color: #FE7FC4;
+}
+.font-list__letter-block--green{
+  background-color: #00A652;
+}
+.font-list__letter-block--blue{
+  background-color: #006DFE;
+}
+
+.font-list__item-description{
+  display: flex;
+
+  font-size: 16px;
+
+
+  &::before{
+    content: '';
+    display: block;
+
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+
+    background-color: #bbbbbb;
+  }
+}
+
+.buy-fonts-tab{
+  text-align: center;
+}

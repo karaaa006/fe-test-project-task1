@@ -3,7 +3,14 @@
   "version": "0.0.1",
   "description": "A description for your project.",
   "main": "./dist/index.html",
-  "author": "Oleh Karaulnyi",
+  "author": {
+    "name": "Oleh Karaulnyi",
+    "url": "https://github.com/karaaa006"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karaaa006/fe-test-project-task1"
+  },
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
