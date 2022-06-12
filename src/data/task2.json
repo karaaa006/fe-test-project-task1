@@ -1,0 +1,12 @@
+{
+    "pages": [
+        {
+            "title": "Task 1",
+            "href": "/"
+        },
+        {
+            "title": "Task 2",
+            "href": "/task2.html"
+        }
+    ]
+}

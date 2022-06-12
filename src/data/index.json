@@ -18,5 +18,15 @@
 			"description": "Noto Sans covers over 30 scripts",
 			"color": "blue"
 		}
+	],
+	"pages": [
+		{
+			"title": "Task 1",
+			"href": "/index.html"
+		},
+		{
+			"title": "Task 2",
+			"href": "/task2.html"
+		}
 	]
 }

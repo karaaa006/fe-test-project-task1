@@ -1,0 +1,18 @@
+.nav__list{
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 50px 0;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid #CFD4DB;
+}
+
+.nav__link{
+    color: tomato;
+    
+    text-decoration: none;
+}
