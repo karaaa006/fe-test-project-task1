@@ -9,7 +9,7 @@ const activeTab = [...tabs].find(
   (item) => item.dataset.tabname === activeNavigationTab.value
 );
 
-if (activeTab) activeTab.classList.add("active");
+activeTab?.classList.add("active");
 
 const handleTabChange = (e) => {
   const { value } = e.target;

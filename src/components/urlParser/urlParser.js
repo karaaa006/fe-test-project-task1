@@ -1,8 +1,10 @@
-// start task 2
-const parseUrl = (url) => ({ ...result } = new URL(url));
-// end task 2
+// Start task 2
 
-// tests
+const parseUrl = (url) => ({ ...result } = new URL(url));
+
+// End task 2
+
+// Tests
 let obj = parseUrl("https://ffwagency.com/do/any.php?a=1#foo");
 console.log(obj.hash);
 console.log(obj.hostname);
@@ -16,6 +18,7 @@ const resultRef = document.querySelector(".url-parser__result");
 const handleRenderResult = (url) => {
   try {
     const parsedUrl = parseUrl(url);
+
     if (parsedUrl) {
       resultRef.textContent = `Hostname: ${
         parsedUrl.hostname || "-"
@@ -28,4 +31,4 @@ const handleRenderResult = (url) => {
   }
 };
 
-buttonRef.addEventListener("click", () => handleRenderResult(inputRef.value));
+buttonRef?.addEventListener("click", () => handleRenderResult(inputRef.value));
